@@ -20,7 +20,7 @@
 
 #define FINISHED_PART_1 TRUE
 #define FINISHED_PART_2 TRUE
-#define FINISHED_PART_3 FALSE
+#define FINISHED_PART_3 TRUE
 
 #include <algorithm>
 #include <cassert>
@@ -93,12 +93,8 @@ namespace csc232
 
 	std::string Yorkie::speak() const
 	{
-		std::string response
-		{
-			"DID YOU SAY SPEAK?"
-		};
-
-	return response;
+		std::string response { "DID YOU SAY SPEAK?" };
+		return response;
 	}
 
 	void Yorkie::sit() const
@@ -117,10 +113,10 @@ namespace csc232
 			std::string name;
 	};
 
-
+    // TODO: Task 2.b.2 - Add your GreatDaehn definition below (before the #endif)
 	GreatDaehn::GreatDaehn(const std::string& dogs_name) : name { dogs_name }
 	{
-		std::cout << "A Great Daehn named " << name << " was just created. Ew." << std::endl;
+		std::cout << "A GreatDaehn named " << name << " was just created." << std::endl;
 	}
 
 	std::string GreatDaehn::speak() const
@@ -131,9 +127,9 @@ namespace csc232
 
 	void GreatDaehn::sit() const
 	{
-		std::cout << "A Great Daehn named " << name << " just sat down." << std::endl;
+		std::cout << "A GreatDaehn named " << name << " just sat down." << std::endl;
 	}
-    // TODO: Task 2.b.2 - Add your GreatDaehn definition below (before the #endif)
+
 
 #endif // FINISHED_PART_2
 
