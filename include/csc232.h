@@ -97,6 +97,8 @@ namespace csc232
 		{
 			"DID YOU SAY SPEAK?"
 		};
+
+	return response;
 	}
 
 	void Yorkie::sit() const
@@ -116,17 +118,15 @@ namespace csc232
 	};
 
 
-	GreatDaehn::GreatDaehn(const std::string& dogs_name) : name { dogs_name}
+	GreatDaehn::GreatDaehn(const std::string& dogs_name) : name { dogs_name }
 	{
 		std::cout << "A Great Daehn named " << name << " was just created. Ew." << std::endl;
 	}
 
 	std::string GreatDaehn::speak() const
 	{
-		std::string response
-		{
-			"What?"
-		};
+		std::string response { "What?" };
+		return response;
 	}
 
 	void GreatDaehn::sit() const
